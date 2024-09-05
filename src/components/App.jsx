@@ -1,20 +1,12 @@
-import Product from './Product';
+import { useState } from 'react';
 
-export default function App() {
-  return (
-    <>
-      <h1>Best selling</h1>
+const App = () => {
+	const handleClick = () => {
+		alert("I'm a button!");
+	};
 
-      <Product
-        name="Tacos With Lime"
-        imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
-        price={10.99}
-      />
-      <Product
-        name="Fries and Burger"
-        imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
-        price={14.29}
-      />
-    </>
-  );
-}
+	return <button onClick={handleClick}>Click me!</button>;
+};
+
+
+export default App;
